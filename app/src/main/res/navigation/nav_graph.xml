@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainMenuFragment">
+
+    <fragment
+        android:id="@+id/MainMenuFragment"
+        android:name="com.example.chaseme.fragment.MainMenuFragment"
+        android:label=""
+        tools:layout="@layout/main_menu_fragment">
+
+        <action
+            android:id="@+id/action_MainMenuFragment_to_MainLeaderboardFragment"
+            app:destination="@id/MainLeaderboardFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_MainSettingsFragment"
+            app:destination="@id/MainSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainSettingsFragment"
+        android:name="com.example.chaseme.fragment.MainSettingsFragment"
+        android:label="@string/Settings"
+        tools:layout="@layout/main_settings_fragment">
+        <action
+            android:id="@+id/action_MainSettingsFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MainLeaderboardFragment"
+        android:name="com.example.chaseme.fragment.MainLeaderboardFragment"
+        android:label="@string/Leaderboard"
+        tools:layout="@layout/main_leaderboard_fragment">
+        <action
+            android:id="@+id/action_MainLeaderboardFragment_to_MainMenuFragment"
+            app:destination="@id/MainMenuFragment" />
+    </fragment>
+</navigation>

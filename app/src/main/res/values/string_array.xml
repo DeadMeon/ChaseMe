@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hunters">
+        <item>Cat</item>
+        <item>Thief</item>
+    </string-array>
+    <string-array name="preys">
+        <item>Mouse</item>
+        <item>Coin</item>
+    </string-array>
+    <string-array name="dangers">
+        <item>Blood</item>
+        <item>Police</item>
+    </string-array>
+</resources>
